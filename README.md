@@ -1,64 +1,64 @@
-# Digitaler Ratenkredit – Hansebank
+# Digital Installment Loan – Hansebank
 
-Anforderungsanalyse für die Digitalisierung des Ratenkreditprozesses einer fiktiven Regionalbank – von der Ausgangslage über Prozess- und Customer-Journey-Analyse bis zu umsetzungsreifen User Stories und KPI-Auswertungen.
+Requirements analysis for digitalizing the installment loan process of a fictional regional bank – from the starting situation through process and customer journey analysis to implementation-ready user stories and KPI analysis.
 
-## Ausgangslage
+## Starting situation
 
-Die Hansebank vergibt Ratenkredite an Privatkunden heute fast ausschließlich über die Filiale:
+Hansebank currently grants installment loans to retail customers almost exclusively through its branches:
 
-- Der Kunde vereinbart einen Termin und füllt einen Papierantrag aus.
-- Einkommensnachweise werden kopiert und manuell erfasst.
-- Die SCHUFA-Abfrage und die Bonitätsprüfung stoßen Sachbearbeiter manuell an.
-- Bis zur Kreditentscheidung vergehen im Schnitt **ca. 5 Werktage**.
+- The customer books an appointment and fills out a paper application.
+- Proof of income is copied and entered manually.
+- Case workers trigger the SCHUFA credit bureau query and the creditworthiness check manually.
+- It takes about **5 working days** on average to reach a credit decision.
 
-Folgen: Kunden wandern zu Direktbanken mit Sofortzusage ab, die Sachbearbeitung ist durch Routinefälle ausgelastet, und Medienbrüche führen zu Erfassungsfehlern.
+Consequences: customers move to direct banks that offer instant approval, case workers are tied up with routine cases, and media breaks lead to data entry errors.
 
-## Ziele
+## Goals
 
-| Ziel | Heute | Zielwert |
+| Goal | Today | Target |
 |---|---|---|
-| Zeit bis zur (Vor-)Entscheidung | ca. 5 Werktage | **unter 10 Minuten** für Standardfälle |
-| Abbruchquote im Antragsprozess | nicht gemessen | **unter 30 %**, je Schritt messbar |
-| Manuell bearbeitete Anträge | 100 % | **max. 30 %** (nur Sonderfälle) |
+| Time to (pre-)decision | approx. 5 working days | **under 10 minutes** for standard cases |
+| Drop-out rate in the application process | not measured | **under 30%**, measurable per step |
+| Manually processed applications | 100% | **max. 30%** (special cases only) |
 
-## Stakeholder
+## Stakeholders
 
-| Stakeholder | Interesse | Rolle im Projekt |
+| Stakeholder | Interest | Role in the project |
 |---|---|---|
-| Privatkunde | Schnelle, einfache Antragstellung ohne Filialbesuch | Endnutzer, Input über Interviews und Journey |
-| Kreditsachbearbeitung | Weniger Routinefälle, vollständige Antragsdaten | Fachexperte, Abnahme der Prozesse |
-| Risikomanagement | Kreditrisiko kontrollieren, Entscheidungsregeln steuern | Liefert Scoring- und Entscheidungsregeln |
-| Compliance / Datenschutz | Einhaltung von MaRisk, DSGVO und Verbraucherkreditrecht | Prüft Anforderungen, Freigabe |
-| Product Owner (Privatkundengeschäft) | Marktanteil, Kundenzufriedenheit | Priorisiert das Backlog |
-| IT / Entwicklungsteam | Klare, umsetzbare Anforderungen und Schnittstellen | Umsetzung, Schätzung der Stories |
+| Retail customer | Fast, simple application without a branch visit | End user, input through interviews and journey |
+| Loan case processing | Fewer routine cases, complete application data | Domain expert, approval of processes |
+| Risk management | Control credit risk, steer decision rules | Provides scoring and decision rules |
+| Compliance / data protection | Compliance with MaRisk, GDPR and consumer credit law | Reviews requirements, sign-off |
+| Product Owner (retail banking) | Market share, customer satisfaction | Prioritizes the backlog |
+| IT / development team | Clear, actionable requirements and interfaces | Implementation, story estimation |
 
 ## Scope
 
-**Im Scope**
-- Ratenkredite für Privatkunden bis 50.000 €
-- Online-Antragsstrecke (Web, mobilfähig)
-- Automatische Vorprüfung inkl. SCHUFA-Abfrage und Vorentscheidung
-- Weiterleitung von Sonderfällen an die Sachbearbeitung
+**In scope**
+- Installment loans for retail customers up to €50,000
+- Online application journey (web, mobile-friendly)
+- Automatic pre-check including SCHUFA query and preliminary decision
+- Forwarding of special cases to case processing
 
-**Nicht im Scope**
-- Baufinanzierung und Geschäftskundenkredite
-- Auszahlung und Vertragsverwaltung nach Abschluss
-- Änderungen am Kernbanksystem
+**Out of scope**
+- Mortgage financing and business loans
+- Payout and contract management after closing
+- Changes to the core banking system
 
-## Vorgehen & Artefakte
+## Approach & artifacts
 
-| Artefakt | Inhalt | Datei |
+| Artifact | Content | File |
 |---|---|---|
-| Prozessmodell (BPMN) | Ist- und Soll-Prozess mit markierten Schwachstellen | [diagramme/](diagramme/) |
-| Customer Journey Map | Phasen, Touchpoints, Pain Points aus Kundensicht | [diagramme/](diagramme/) |
-| Epics & User Stories | Anforderungen mit Akzeptanzkriterien (Given/When/Then) | [docs/](docs/) |
-| KPI-Auswertung (SQL) | Kennzahlen auf Basis des öffentlichen German-Credit-Datensatzes | [sql/](sql/) |
+| Process model (BPMN) | As-is and to-be process with marked weak points | [diagramme/](diagramme/) |
+| Customer journey map | Phases, touchpoints, pain points from the customer's view | [diagramme/](diagramme/) |
+| Epics & user stories | Requirements with acceptance criteria (Given/When/Then) | [docs/](docs/) |
+| KPI analysis (SQL) | Metrics based on the public German Credit dataset | [sql/](sql/) |
 
-Datenbasis: [Statlog (German Credit Data)](https://archive.ics.uci.edu/dataset/144/statlog+german+credit+data), UCI Machine Learning Repository – 1.000 anonymisierte Kreditanträge einer deutschen Bank.
+Data basis: [Statlog (German Credit Data)](https://archive.ics.uci.edu/dataset/144/statlog+german+credit+data), UCI Machine Learning Repository – 1,000 anonymized credit applications from a German bank.
 
-## Nächste Schritte
+## Next steps
 
-- Schnittstelle zur SCHUFA als API-Spezifikation (OpenAPI) ausarbeiten
-- Ablauf der Vorprüfung als UML-Sequenzdiagramm modellieren
-- Entscheidungsregeln des Risikomanagements als Entscheidungstabelle (DMN) dokumentieren
-- Klickbaren Prototyp der Antragsstrecke mit Nutzern testen
+- Elaborate the SCHUFA interface as an API specification (OpenAPI)
+- Model the pre-check flow as a UML sequence diagram
+- Document the risk management decision rules as a decision table (DMN)
+- Test a clickable prototype of the application journey with users
