@@ -1,0 +1,96 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Customer Journey" id="journey">
+    <mxGraphModel dx="1400" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1360" pageHeight="720" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Titel + Persona -->
+        <mxCell id="title" value="Customer Journey Map – Digitaler Ratenkredit (Soll-Prozess)" style="text;html=1;fontSize=18;fontStyle=1;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="10" width="900" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="persona" value="&lt;b&gt;Persona: Lena, 32, Pflegefachkraft&lt;/b&gt; · nutzt Online-Banking per App · braucht kurzfristig 3.000 € für eine neue Waschmaschine · arbeitet im Schichtdienst, hat wenig Zeit für Filialtermine" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=10;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="50" width="1260" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Zeilenbeschriftungen -->
+        <mxCell id="lbl_phase" value="Phase" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#4D6A8A;fontColor=#FFFFFF;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="130" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_tut" value="Was tut der Kunde?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="180" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_tp" value="Touchpoints" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="270" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_gef" value="Gefühl" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="340" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_pain" value="Pain Points" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="460" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_chance" value="Chancen → Anforderungen" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="550" width="160" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- Phase 1 -->
+        <mxCell id="p1_h" value="1. Bedarf erkennen" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#4D6A8A;fontColor=#FFFFFF;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="200" y="130" width="220" height="50" as="geometry" /></mxCell>
+        <mxCell id="p1_tut" value="Waschmaschine defekt – braucht kurzfristig 3.000 €" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;fontSize=11;" vertex="1" parent="1"><mxGeometry x="200" y="180" width="220" height="90" as="geometry" /></mxCell>
+        <mxCell id="p1_tp" value="– (zu Hause)" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;fontSize=11;" vertex="1" parent="1"><mxGeometry x="200" y="270" width="220" height="70" as="geometry" /></mxCell>
+        <mxCell id="p1_gef" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="200" y="340" width="220" height="120" as="geometry" /></mxCell>
+        <mxCell id="p1_pain" value="Zeitdruck, Unsicherheit über die Kosten" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;fontSize=11;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1"><mxGeometry x="200" y="460" width="220" height="90" as="geometry" /></mxCell>
+        <mxCell id="p1_ch" value="Kreditbedarf früh erkennen, z. B. Hinweis in der Banking-App" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1"><mxGeometry x="200" y="550" width="220" height="100" as="geometry" /></mxCell>
+
+        <!-- Phase 2 -->
+        <mxCell id="p2_h" value="2. Informieren &amp; vergleichen" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#4D6A8A;fontColor=#FFFFFF;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="420" y="130" width="220" height="50" as="geometry" /></mxCell>
+        <mxCell id="p2_tut" value="Nutzt den Kreditrechner, vergleicht Angebote anderer Banken" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;fontSize=11;" vertex="1" parent="1"><mxGeometry x="420" y="180" width="220" height="90" as="geometry" /></mxCell>
+        <mxCell id="p2_tp" value="Website, Banking-App, Vergleichsportal" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;fontSize=11;" vertex="1" parent="1"><mxGeometry x="420" y="270" width="220" height="70" as="geometry" /></mxCell>
+        <mxCell id="p2_gef" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="420" y="340" width="220" height="120" as="geometry" /></mxCell>
+        <mxCell id="p2_pain" value="Konditionen schwer vergleichbar, Angst vor negativem SCHUFA-Eintrag" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;fontSize=11;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1"><mxGeometry x="420" y="460" width="220" height="90" as="geometry" /></mxCell>
+        <mxCell id="p2_ch" value="Transparenter Kreditrechner mit SCHUFA-neutraler Konditionsanfrage&lt;br&gt;&lt;b&gt;→ US-01&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1"><mxGeometry x="420" y="550" width="220" height="100" as="geometry" /></mxCell>
+
+        <!-- Phase 3 -->
+        <mxCell id="p3_h" value="3. Antrag stellen" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#4D6A8A;fontColor=#FFFFFF;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="640" y="130" width="220" height="50" as="geometry" /></mxCell>
+        <mxCell id="p3_tut" value="Füllt das Online-Formular aus, gibt Einkommen und Ausgaben an, reicht Nachweise ein" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;fontSize=11;" vertex="1" parent="1"><mxGeometry x="640" y="180" width="220" height="90" as="geometry" /></mxCell>
+        <mxCell id="p3_tp" value="Online-Antragsstrecke (Smartphone)" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;fontSize=11;" vertex="1" parent="1"><mxGeometry x="640" y="270" width="220" height="70" as="geometry" /></mxCell>
+        <mxCell id="p3_gef" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="640" y="340" width="220" height="120" as="geometry" /></mxCell>
+        <mxCell id="p3_pain" value="Welche Nachweise brauche ich? Upload von Gehaltsabrechnungen am Handy umständlich" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;fontSize=11;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1"><mxGeometry x="640" y="460" width="220" height="90" as="geometry" /></mxCell>
+        <mxCell id="p3_ch" value="Checkliste vor dem Start, digitaler Kontoblick statt Upload&lt;br&gt;&lt;b&gt;→ US-02, US-03&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1"><mxGeometry x="640" y="550" width="220" height="100" as="geometry" /></mxCell>
+
+        <!-- Phase 4 -->
+        <mxCell id="p4_h" value="4. Prüfung &amp; Entscheidung" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#4D6A8A;fontColor=#FFFFFF;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="860" y="130" width="220" height="50" as="geometry" /></mxCell>
+        <mxCell id="p4_tut" value="Wartet auf das Ergebnis der Prüfung" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;fontSize=11;" vertex="1" parent="1"><mxGeometry x="860" y="180" width="220" height="90" as="geometry" /></mxCell>
+        <mxCell id="p4_tp" value="Statusseite, E-Mail / Push-Nachricht" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;fontSize=11;" vertex="1" parent="1"><mxGeometry x="860" y="270" width="220" height="70" as="geometry" /></mxCell>
+        <mxCell id="p4_gef" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="860" y="340" width="220" height="120" as="geometry" /></mxCell>
+        <mxCell id="p4_pain" value="Wie lange dauert das? Werde ich abgelehnt – und warum?" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;fontSize=11;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1"><mxGeometry x="860" y="460" width="220" height="90" as="geometry" /></mxCell>
+        <mxCell id="p4_ch" value="Vorabzusage in &amp;lt; 10 Minuten, Statusanzeige, Ablehnung mit Begründung&lt;br&gt;&lt;b&gt;→ US-04, US-05&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1"><mxGeometry x="860" y="550" width="220" height="100" as="geometry" /></mxCell>
+
+        <!-- Phase 5 -->
+        <mxCell id="p5_h" value="5. Vertrag &amp; Auszahlung" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#4D6A8A;fontColor=#FFFFFF;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="1080" y="130" width="220" height="50" as="geometry" /></mxCell>
+        <mxCell id="p5_tut" value="Identifiziert sich, unterschreibt digital, erhält das Geld" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;fontSize=11;" vertex="1" parent="1"><mxGeometry x="1080" y="180" width="220" height="90" as="geometry" /></mxCell>
+        <mxCell id="p5_tp" value="Video-Ident / eID, Girokonto" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;fontSize=11;" vertex="1" parent="1"><mxGeometry x="1080" y="270" width="220" height="70" as="geometry" /></mxCell>
+        <mxCell id="p5_gef" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="1080" y="340" width="220" height="120" as="geometry" /></mxCell>
+        <mxCell id="p5_pain" value="Ident-Verfahren klappt nicht (Kamera, Wartezeit beim Video-Call)" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;fontSize=11;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1"><mxGeometry x="1080" y="460" width="220" height="90" as="geometry" /></mxCell>
+        <mxCell id="p5_ch" value="Mehrere Ident-Optionen (Video-Ident, eID), Auszahlung am selben Tag&lt;br&gt;&lt;b&gt;→ US-06&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1"><mxGeometry x="1080" y="550" width="220" height="100" as="geometry" /></mxCell>
+
+        <!-- Gefühlskurve -->
+        <mxCell id="e1" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#E24B4A;strokeColor=none;" vertex="1" parent="1"><mxGeometry x="303" y="423" width="14" height="14" as="geometry" /></mxCell>
+        <mxCell id="e2" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#EF9F27;strokeColor=none;" vertex="1" parent="1"><mxGeometry x="523" y="403" width="14" height="14" as="geometry" /></mxCell>
+        <mxCell id="e3" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#EF9F27;strokeColor=none;" vertex="1" parent="1"><mxGeometry x="743" y="408" width="14" height="14" as="geometry" /></mxCell>
+        <mxCell id="e4" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#639922;strokeColor=none;" vertex="1" parent="1"><mxGeometry x="963" y="363" width="14" height="14" as="geometry" /></mxCell>
+        <mxCell id="e5" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#639922;strokeColor=none;" vertex="1" parent="1"><mxGeometry x="1183" y="348" width="14" height="14" as="geometry" /></mxCell>
+        <mxCell id="el1" value="😟 gestresst" style="text;html=1;fontSize=11;align=left;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="322" y="410" width="90" height="20" as="geometry" /></mxCell>
+        <mxCell id="el2" value="🤔 unsicher" style="text;html=1;fontSize=11;align=left;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="542" y="390" width="90" height="20" as="geometry" /></mxCell>
+        <mxCell id="el3" value="😐 etwas genervt" style="text;html=1;fontSize=11;align=left;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="762" y="425" width="95" height="20" as="geometry" /></mxCell>
+        <mxCell id="el4" value="😀 erleichtert" style="text;html=1;fontSize=11;align=left;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="982" y="375" width="90" height="20" as="geometry" /></mxCell>
+        <mxCell id="el5" value="😊 zufrieden" style="text;html=1;fontSize=11;align=left;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="1202" y="362" width="90" height="20" as="geometry" /></mxCell>
+        <mxCell id="c1" style="curved=1;html=1;endArrow=none;strokeWidth=2;strokeColor=#888888;" edge="1" parent="1" source="e1" target="e2"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="c2" style="curved=1;html=1;endArrow=none;strokeWidth=2;strokeColor=#888888;" edge="1" parent="1" source="e2" target="e3"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="c3" style="curved=1;html=1;endArrow=none;strokeWidth=2;strokeColor=#888888;" edge="1" parent="1" source="e3" target="e4"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="c4" style="curved=1;html=1;endArrow=none;strokeWidth=2;strokeColor=#888888;" edge="1" parent="1" source="e4" target="e5"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="gl_hi" value="positiv" style="text;html=1;fontSize=10;fontColor=#888888;align=left;" vertex="1" parent="1"><mxGeometry x="205" y="342" width="60" height="16" as="geometry" /></mxCell>
+        <mxCell id="gl_lo" value="negativ" style="text;html=1;fontSize=10;fontColor=#888888;align=left;" vertex="1" parent="1"><mxGeometry x="205" y="440" width="60" height="16" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

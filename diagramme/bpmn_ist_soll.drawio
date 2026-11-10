@@ -1,0 +1,250 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Ist-Soll-Prozess" id="ist-soll">
+    <mxGraphModel dx="2946" dy="1746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1900" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pool_ist" parent="1" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=0;startSize=30;horizontalStack=0;fontStyle=1;" value="Ist-Prozess (heute)" vertex="1">
+          <mxGeometry height="600" width="1800" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_k1" parent="pool_ist" style="swimlane;html=1;startSize=30;horizontal=0;" value="Kunde" vertex="1">
+          <mxGeometry height="200" width="1770" x="30" as="geometry" />
+        </mxCell>
+        <mxCell id="k1_start" parent="lane_k1" style="shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=standard;symbol=general;" value="Kreditbedarf" vertex="1">
+          <mxGeometry height="40" width="40" x="60" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="k1_t1" parent="lane_k1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" value="Termin vereinbaren" vertex="1">
+          <mxGeometry height="60" width="140" x="140" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k1_t2" parent="lane_k1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" value="Papierantrag ausfüllen + Nachweise mitbringen" vertex="1">
+          <mxGeometry height="60" width="140" x="340" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k1_t3" parent="lane_k1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" value="Unterlagen nachreichen" vertex="1">
+          <mxGeometry height="60" width="140" x="675" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k1_end" parent="lane_k1" style="shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=general;" value="Entscheidung erhalten" vertex="1">
+          <mxGeometry height="40" width="40" x="1680" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="k1_a1" parent="lane_k1" style="shape=partialRectangle;html=1;whiteSpace=wrap;top=1;bottom=1;left=1;right=0;fillColor=none;align=left;spacingLeft=6;strokeColor=#B85450;fontColor=#B85450;fontSize=11;" value="Wartezeit auf Termin, nur zu Öffnungszeiten" vertex="1">
+          <mxGeometry height="50" width="180" x="140" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="k1_a2" parent="lane_k1" style="shape=partialRectangle;html=1;whiteSpace=wrap;top=1;bottom=1;left=1;right=0;fillColor=none;align=left;spacingLeft=6;strokeColor=#B85450;fontColor=#B85450;fontSize=11;" value="Nachreichen verzögert um Tage" vertex="1">
+          <mxGeometry height="50" width="160" x="675" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="k1_a3" parent="lane_k1" style="shape=partialRectangle;html=1;whiteSpace=wrap;top=1;bottom=1;left=1;right=0;fillColor=none;align=left;spacingLeft=6;strokeColor=#B85450;fontColor=#B85450;fontSize=11;" value="Ø 5 Werktage bis zur Entscheidung" vertex="1">
+          <mxGeometry height="50" width="150" x="1610" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_f1" parent="pool_ist" style="swimlane;html=1;startSize=30;horizontal=0;" value="Filiale / Kundenberater" vertex="1">
+          <mxGeometry height="200" width="1770" x="30" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="f1_t1" parent="lane_f1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" value="Beratungsgespräch führen" vertex="1">
+          <mxGeometry height="60" width="140" x="340" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f1_t2" parent="lane_f1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" value="Antrag auf Vollständigkeit prüfen" vertex="1">
+          <mxGeometry height="60" width="140" x="520" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f1_g1" parent="lane_f1" style="shape=mxgraph.bpmn.gateway2;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=none;symbol=none;gwType=exclusive;" value="vollständig?" vertex="1">
+          <mxGeometry height="50" width="50" x="720" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="f1_t3" parent="lane_f1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" value="Antrag an Sachbearbeitung senden" vertex="1">
+          <mxGeometry height="60" width="140" x="820" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f1_a1" parent="lane_f1" style="shape=partialRectangle;html=1;whiteSpace=wrap;top=1;bottom=1;left=1;right=0;fillColor=none;align=left;spacingLeft=6;strokeColor=#B85450;fontColor=#B85450;fontSize=11;" value="Medienbruch: Papier, Rückfragen per Telefon" vertex="1">
+          <mxGeometry height="50" width="180" x="500" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_s1" parent="pool_ist" style="swimlane;html=1;startSize=30;horizontal=0;" value="Kreditsachbearbeitung" vertex="1">
+          <mxGeometry height="200" width="1770" x="30" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="s1_t1" parent="lane_s1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" value="Antragsdaten manuell erfassen" vertex="1">
+          <mxGeometry height="60" width="140" x="820" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s1_t2" parent="lane_s1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" value="SCHUFA-Auskunft manuell anfordern" vertex="1">
+          <mxGeometry height="60" width="140" x="1000" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s1_t3" parent="lane_s1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" value="Bonität prüfen" vertex="1">
+          <mxGeometry height="60" width="140" x="1180" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s1_g1" parent="lane_s1" style="shape=mxgraph.bpmn.gateway2;html=1;verticalLabelPosition=top;verticalAlign=bottom;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=none;symbol=none;gwType=exclusive;" value="Kredit genehmigt?" vertex="1">
+          <mxGeometry height="50" width="50" x="1360" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="s1_t4" parent="lane_s1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" value="Zusage per Post senden" vertex="1">
+          <mxGeometry height="60" width="140" x="1460" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s1_t5" parent="lane_s1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" value="Ablehnung per Post senden" vertex="1">
+          <mxGeometry height="50" width="140" x="1460" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="s1_a1" parent="lane_s1" style="shape=partialRectangle;html=1;whiteSpace=wrap;top=1;bottom=1;left=1;right=0;fillColor=none;align=left;spacingLeft=6;strokeColor=#B85450;fontColor=#B85450;fontSize=11;" value="Doppelerfassung, Tippfehler" vertex="1">
+          <mxGeometry height="50" width="170" x="820" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="k1_start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" target="k1_t1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="k1_t1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" target="k1_t2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="k1_t2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" target="f1_t1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="f1_t1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" target="f1_t2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="f1_t2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" target="f1_g1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="f1_g1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" target="k1_t3" value="nein">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="k1_t3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;exitX=0;exitY=0.5;entryX=0.5;entryY=0;" target="f1_t2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="f1_g1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" target="f1_t3" value="ja">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="f1_t3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" target="s1_t1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="s1_t1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" target="s1_t2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="s1_t2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" target="s1_t3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="s1_t3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" target="s1_g1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="s1_g1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="s1_t4" value="ja">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="s1_g1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;" target="s1_t5" value="nein">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="s1_t4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0.5;entryY=1;" target="k1_end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="s1_t5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0.5;entryY=1;" target="k1_end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pool_soll" parent="1" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=0;startSize=30;horizontalStack=0;fontStyle=1;" value="Soll-Prozess (digital)" vertex="1">
+          <mxGeometry height="800" width="1800" x="40" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_k2" parent="pool_soll" style="swimlane;html=1;startSize=30;horizontal=0;" value="Kunde" vertex="1">
+          <mxGeometry height="200" width="1770" x="30" as="geometry" />
+        </mxCell>
+        <mxCell id="k2_start" parent="lane_k2" style="shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=standard;symbol=general;" value="Kreditbedarf" vertex="1">
+          <mxGeometry height="40" width="40" x="60" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="k2_t1" parent="lane_k2" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" value="Antrag online ausfüllen" vertex="1">
+          <mxGeometry height="60" width="140" x="140" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k2_t2" parent="lane_k2" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" value="Nachweise hochladen / Kontoblick freigeben" vertex="1">
+          <mxGeometry height="60" width="140" x="320" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k2_t3" parent="lane_k2" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" value="Vertrag digital unterschreiben" vertex="1">
+          <mxGeometry height="60" width="140" x="1500" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k2_end" parent="lane_k2" style="shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=general;" value="Kredit zugesagt" vertex="1">
+          <mxGeometry height="40" width="40" x="1690" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_o2" parent="pool_soll" style="swimlane;html=1;startSize=30;horizontal=0;" value="Online-Antragsstrecke" vertex="1">
+          <mxGeometry height="200" width="1770" x="30" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="o2_t1" parent="lane_o2" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" value="Eingaben automatisch validieren" vertex="1">
+          <mxGeometry height="60" width="140" x="500" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="o2_t2" parent="lane_o2" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" value="Identität prüfen (Video-/eID-Ident)" vertex="1">
+          <mxGeometry height="60" width="140" x="680" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="o2_t3" parent="lane_o2" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" value="Vorabzusage anzeigen" vertex="1">
+          <mxGeometry height="60" width="140" x="1320" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="o2_a1" parent="lane_o2" style="shape=partialRectangle;html=1;whiteSpace=wrap;top=1;bottom=1;left=1;right=0;fillColor=none;align=left;spacingLeft=6;strokeColor=#82B366;fontColor=#2D7600;fontSize=11;" value="Keine unvollständigen Anträge mehr" vertex="1">
+          <mxGeometry height="50" width="180" x="500" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_sc2" parent="pool_soll" style="swimlane;html=1;startSize=30;horizontal=0;" value="Scoring / SCHUFA" vertex="1">
+          <mxGeometry height="200" width="1770" x="30" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="sc2_t1" parent="lane_sc2" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" value="SCHUFA-Auskunft automatisch abrufen" vertex="1">
+          <mxGeometry height="60" width="140" x="860" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sc2_t2" parent="lane_sc2" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" value="Scoring berechnen" vertex="1">
+          <mxGeometry height="60" width="140" x="1040" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sc2_g1" parent="lane_sc2" style="shape=mxgraph.bpmn.gateway2;html=1;verticalLabelPosition=top;verticalAlign=bottom;labelPosition=left;align=right;perimeter=rhombusPerimeter;outlineConnect=0;outline=none;symbol=none;gwType=exclusive;" value="Ergebnis?" vertex="1">
+          <mxGeometry height="50" width="50" x="1220" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="sc2_t3" parent="lane_sc2" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" value="Ablehnung mit Begründung anzeigen" vertex="1">
+          <mxGeometry height="60" width="140" x="1320" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sc2_end" parent="lane_sc2" style="shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=general;" value="abgelehnt" vertex="1">
+          <mxGeometry height="40" width="40" x="1490" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sc2_a1" parent="lane_sc2" style="shape=partialRectangle;html=1;whiteSpace=wrap;top=1;bottom=1;left=1;right=0;fillColor=none;align=left;spacingLeft=6;strokeColor=#82B366;fontColor=#2D7600;fontSize=11;" value="Standardfälle: Entscheidung &lt; 10 Min (Dunkelverarbeitung)" vertex="1">
+          <mxGeometry height="50" width="200" x="1000" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_s2" parent="pool_soll" style="swimlane;html=1;startSize=30;horizontal=0;" value="Kreditsachbearbeitung" vertex="1">
+          <mxGeometry height="200" width="1770" x="30" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="s2_t1" parent="lane_s2" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" value="Sonderfall manuell prüfen" vertex="1">
+          <mxGeometry height="60" width="140" x="1175" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s2_g1" parent="lane_s2" style="shape=mxgraph.bpmn.gateway2;html=1;verticalLabelPosition=top;verticalAlign=bottom;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=none;symbol=none;gwType=exclusive;" value="genehmigt?" vertex="1">
+          <mxGeometry height="50" width="50" x="1370" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="s2_end" parent="lane_s2" style="shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=general;" value="abgelehnt" vertex="1">
+          <mxGeometry height="40" width="40" x="1480" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="s2_a1" parent="lane_s2" style="shape=partialRectangle;html=1;whiteSpace=wrap;top=1;bottom=1;left=1;right=0;fillColor=none;align=left;spacingLeft=6;strokeColor=#82B366;fontColor=#2D7600;fontSize=11;" value="Nur Sonderfälle manuell → Entlastung Sachbearbeitung" vertex="1">
+          <mxGeometry height="50" width="190" x="1150" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="f1" edge="1" parent="1" source="k2_start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" target="k2_t1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f2" edge="1" parent="1" source="k2_t1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" target="k2_t2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f3" edge="1" parent="1" source="k2_t2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" target="o2_t1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f4" edge="1" parent="1" source="o2_t1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" target="o2_t2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f5" edge="1" parent="1" source="o2_t2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" target="sc2_t1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f6" edge="1" parent="1" source="sc2_t1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" target="sc2_t2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f7" edge="1" parent="1" source="sc2_t2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" target="sc2_g1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f8" edge="1" parent="1" source="sc2_g1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;exitX=0.5;exitY=0;entryX=0;entryY=0.5;" target="o2_t3" value="grün">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f9" edge="1" parent="1" source="sc2_g1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="sc2_t3" value="rot">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f10" edge="1" parent="1" source="sc2_g1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="s2_t1" value="gelb">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f11" edge="1" parent="1" source="o2_t3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="k2_t3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f12" edge="1" parent="1" source="k2_t3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" target="k2_end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f13" edge="1" parent="1" source="sc2_t3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" target="sc2_end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f14" edge="1" parent="1" source="s2_t1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" target="s2_g1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f15" edge="1" parent="1" source="s2_g1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0.5;entryY=1;" target="k2_t3" value="ja">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f16" edge="1" parent="1" source="s2_g1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;" target="s2_end" value="nein">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
